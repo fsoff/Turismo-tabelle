@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Turismo - Tabelle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Avenir Next World', sans-serif;
+      background-color: #698dd2;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container { display: flex; height: 100vh; width: 100vw; }
+    .left-pane { width: 45vw; min-width: 350px; height: 100vh; overflow: hidden; }
+    .map-box { width: 100%; height: 100%; border: none; }
+    .right-pane { flex: 1; padding: 24px; overflow-y: auto; display: flex; flex-direction: column; }
+    .title-box {
+      display: flex; align-items: center; justify-content: flex-start; gap: 12px;
+      position: sticky; top: 0; background-color: #698dd2; z-index: 10; padding: 12px 0 8px;
+    }
+    .title-box img { width: 64px; height: auto; }
+    h1 { font-size: 22px; margin: 0; white-space: nowrap; }
+    .table-box { background-color: rgba(255,255,255,0.1); border-radius: 12px; padding: 16px; margin-bottom: 20px; }
+    .description { margin-top: 6px; font-size: 13px; color: #ffffffcc; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { border: 1px solid #ffffff55; padding: 8px; text-align: center; }
+    th { background-color: #ffffff33; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="left-pane">
+    <iframe class="map-box" src="https://iuav-labgis.maps.arcgis.com/apps/instant/basic/index.html?appid=9c8fdb1e3cc541149c33a50f89af0257"></iframe>
+  </div>
+  <div class="right-pane">
+    <div class="title-box">
+      <img src="https://i.imgur.com/LBqxj82.png" alt="Icona Turismo Ricamata" />
+      <h1>Turismo: Dati Spaziali e Socio-Economici</h1>
+    </div>
+
+    <div class="table-box">
+      <div class="description">Turnover del settore (milioni di euro).</div>
+      <table>
+        <tr><th>Anno</th><th>Turnover (mln €)</th></tr>
+        <tr><td>2013</td><td>19994.70</td></tr><tr><td>2014</td><td>18642.53</td></tr><tr><td>2015</td><td>19861.50</td></tr>
+        <tr><td>2016</td><td>21844.35</td></tr><tr><td>2017</td><td>24702.05</td></tr><tr><td>2018</td><td>28530.01</td></tr>
+        <tr><td>2019</td><td>27914.42</td></tr><tr><td>2020</td><td>9298.32</td></tr><tr><td>2021</td><td>15645.48</td></tr><tr><td>2022</td><td>28945.36</td></tr>
+      </table>
+    </div>
+
+    <div class="table-box">
+      <div class="description">Valore Aggiunto Lordo (GVA) del settore.</div>
+      <table>
+        <tr><th>Anno</th><th>GVA (mln €)</th></tr>
+        <tr><td>2013</td><td>6181.73</td></tr><tr><td>2014</td><td>5820.46</td></tr><tr><td>2015</td><td>6401.05</td></tr>
+        <tr><td>2016</td><td>7413.23</td></tr><tr><td>2017</td><td>8434.36</td></tr><tr><td>2018</td><td>9557.78</td></tr>
+        <tr><td>2019</td><td>9594.95</td></tr><tr><td>2020</td><td>2773.31</td></tr><tr><td>2021</td><td>5337.24</td></tr><tr><td>2022</td><td>9883.91</td></tr>
+      </table>
+    </div>
+
+    <div class="table-box">
+      <div class="description">Occupazione (FTE) stimata nel settore.</div>
+      <table>
+        <tr><th>Anno</th><th>Occupazione (FTE)</th></tr>
+        <tr><td>2013</td><td>119.00</td></tr><tr><td>2014</td><td>98.48</td></tr><tr><td>2015</td><td>102.20</td></tr>
+        <tr><td>2016</td><td>111.87</td></tr><tr><td>2017</td><td>132.53</td></tr><tr><td>2018</td><td>150.99</td></tr>
+        <tr><td>2019</td><td>146.49</td></tr><tr><td>2020</td><td>54.40</td></tr><tr><td>2021</td><td>68.62</td></tr><tr><td>2022</td><td>90.62</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
